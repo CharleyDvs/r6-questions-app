@@ -77,7 +77,7 @@ const Body = (props) => {
     return (
       <div className={styles.theBody}>
         <div>
-          <Image src={survey.src} alt="" />
+          <Image src={survey.src} alt="" width={500} height={500}/>
         </div>
         <div className={styles.rightSide}>
           <h1>Forms for everyone!</h1>
@@ -98,7 +98,7 @@ const Body = (props) => {
     return (
       <div className={styles.theBody}>
         <div>
-          <Image alt="" src={launch.src} />
+          <Image alt="" src={launch.src} width={500} height={500}/>
         </div>
         <div className={styles.rightSide}>
           <h1>Login</h1>
@@ -140,7 +140,7 @@ const Body = (props) => {
     return (
       <div className={styles.theBody}>
         <div>
-          <Image alt="" src={customer.src} />
+          <Image alt="" src={customer.src} width={500} height={500}/>
         </div>
         <div className={styles.rightSide}>
           <h1>Signup</h1>

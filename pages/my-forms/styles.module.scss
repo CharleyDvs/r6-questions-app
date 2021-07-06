@@ -1,0 +1,19 @@
+.container {
+  width: 85%;
+  margin-left: 7.5%;
+  padding: 2rem 0;
+  button{
+    padding: 1rem;
+    border-radius: 3px;
+    min-width: 20px;
+    margin-left: 0px auto;
+    background-color: #DE541E ;
+    border-style: none;
+    color: white;
+    box-shadow: 5px 5px 0px black;
+}
+button:active{
+    transform: scale(0.95);
+}
+
+}

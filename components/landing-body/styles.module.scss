@@ -1,0 +1,79 @@
+.theBody{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+
+    img{
+        max-width: 50vw;
+        max-height: 80vh;
+        opacity: 1;
+        animation-name: fadeInOpacity;
+	    animation-iteration-count: 1;
+	    animation-timing-function: ease-in;
+	    animation-duration: 2s;
+        overflow: hidden;
+    }
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .rightSide{
+        margin: 50px;
+        max-width: 500px;
+        box-shadow: 10px black;
+        display: flex;
+        flex-direction: column;
+    }
+    .wrong{
+        color: red;
+    }
+    button{
+        padding: 1rem;
+        border-radius: 3px;
+        min-width: 20px;
+        margin-top: 3rem;
+        margin-left: auto;
+        background-color: #DE541E;
+        border-style: none;
+        color: white;
+        box-shadow: 5px 5px 5px black;
+        &:hover{
+            cursor: pointer ;
+        } 
+        &:active{
+            transform: scale(0.95); 
+        }
+        &:disabled{
+            background-color: rgb(199, 194, 194);
+        }
+    }
+    p{
+        text-shadow: 1px 1px 50px black;
+    }
+    h1{
+        text-shadow: 0 14px 15px rgb(0, 0, 0, 0.25)
+    }
+    input {
+        background-color: white;
+        border-radius: 5px;
+        width: 50%;
+        margin: 6px 0;
+        padding: 8px;
+        outline: none;
+        min-width: 300px;
+        &:active {
+          outline: none;
+        }
+      }
+      .submit{
+          margin: 0;
+          
+      }
+
+}

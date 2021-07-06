@@ -1,0 +1,61 @@
+// Variants
+
+$white-color: #fff;
+$light-grey: #00A9A5;
+$light-black: #092327;
+$normal-green: #0B5351;
+
+.m-1 {
+  margin: 1rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.shadow {
+  box-shadow: 15px 15px 15px rgba(22, 22, 22, 0.1);
+}
+
+.transition {
+  transition: all ease 0.7s;
+}
+
+.input {
+  background-color: $white-color;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  margin: 6px 0;
+  padding: 8px;
+  outline: none;
+  @extend .shadow;
+  &:active {
+    outline: none;
+  }
+}
+
+.label {
+  margin: 6px 0;
+}
+
+.question-gen-container {
+  margin: 0;
+  padding: 0 1rem;
+  @extend .flex-column;
+}
+
+.btn {
+  padding: 8px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  @extend .transition;
+}
+
+.options-container {
+  padding: 1rem 0;
+  width: 80%;
+  @extend .flex-column;
+}

@@ -1,0 +1,46 @@
+@import 'styles/shared';
+
+.question-generator {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  max-width: 85%;
+  margin: 1.5rem 7.5%;
+  background-color: $light-grey;
+  padding: 0;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  @extend .shadow;
+}
+
+.question-title {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: $light-black;
+  color: $light-grey;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  &::after {
+    content: '?';
+    position: absolute;
+    transform: scale(2.5);
+    opacity: 0.2;
+    left: 2rem;
+    top: 2rem;
+  }
+
+  .delete-btn {
+    align-self: center;
+    transform: scale(1.9);
+    cursor: pointer;
+    opacity: (0.5);
+    @extend .transition;
+    &:hover {
+      opacity: 1;
+      transform: scale(2.2);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.Navbar{
+    background-color: rgb(9, 35, 39);
+    display: flex;
+    flex-direction: row;
+    border-style: none;
+    border-color: black 1px ;
+    border-bottom-style: solid;
+    align-items: center;
+    justify-content: space-around;
+
+    h1{
+        color: rgb(0, 169, 165);
+        &:hover{
+            cursor: pointer ;
+        }    
+    }
+
+    button{
+        padding: 10px;
+        border-radius: 3px;
+        min-width: 20px;
+        margin-left: 0px auto;
+        background-color: rgb(0, 169, 165);
+        border-style: none;
+        color: white;
+        margin-left: 20px;
+        box-shadow: 5px 5px 5px black;
+        &:hover{
+            cursor: pointer ;
+        }  
+    }
+    .logoutdiv{
+        display: flex;
+        align-items: center;
+        .Signup{
+            background-color: #DE541E;
+        }
+    }
+}

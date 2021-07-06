@@ -1,0 +1,33 @@
+@import 'styles/shared';
+
+.container {
+  justify-content: center;
+  margin-top: 8px;
+  @extend .flex-column;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  width: 32px;
+  opacity: 0.5;
+  transform: scale(1.5);
+  span {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    right: 0;
+    width: 35px;
+    transform: scale(0.2) translateY(-20%);
+    @extend .transition;
+  }
+  &:hover {
+    opacity: 1;
+    transform: scale(1.6);
+    span {
+      opacity: 1;
+      right: -30px;
+      transform: scale(0.8) translateY(-20%);
+    }
+  }
+}

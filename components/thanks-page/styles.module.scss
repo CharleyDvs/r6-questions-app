@@ -1,0 +1,20 @@
+$dark-green: #092327;
+$jungle-green: #0B5351;
+$light-green: #00A9A5;
+$flame: #DE541E;
+
+
+.clientForm{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        margin-top: 0;
+        width: 100%;
+        background-color: $dark-green;
+        padding: 2rem;
+        color: $light-green;
+    }
+}

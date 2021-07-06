@@ -1,14 +1,21 @@
-const OpenQuestionGen = ({ setData, questionType }) => {
+import React from 'react'
+import styles from './styles.module.scss'
+
+const OpenQuestionGen = ({ setData, questionData }) => {
+  console.log('pregunta', questionData)
   return (
-    <>
-      <label htmlFor="">Add your question</label>
-      <textarea
-        onChange={(e) =>
-          setData({ type: questionType, questionText: e.target.value })
-        }
+    <div className={styles['question-gen-container']}>
+      <label className={styles.label} htmlFor="">
+        Add your question
+      </label>
+      <input
+        className={styles.input}
+        type="text"
+        onChange={(e) => setData({ ...questionData, text: e.target.value })}
+        value={questionData.text}
       />
-    </>
+    </div>
   )
 }
 
-export default OpenQuestionGen
+export default React.memo(OpenQuestionGen)
